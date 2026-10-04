@@ -1,0 +1,251 @@
+/* Custom resets */
+body {
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ==========================================================================
+   Navbar & Logo Fixes
+   ========================================================================== */
+.navbar {
+    min-height: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* Restrain Navbar Logo Sizing */
+.navbar-brand .logo-img,
+.logo-img {
+    height: 38px !important;
+    width: auto !important;
+    max-height: 38px;
+    object-fit: contain;
+}
+
+/* Page Container for Centered Views */
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar Buttons & Spacing Customizations */
+.welcome-text {
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+.nav-btn {
+    padding: 8px 18px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    border-radius: 4px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn.mr-3 {
+    margin-right: 16px !important;
+}
+
+/* ==========================================================================
+   Hero Banner & Search Section (index.php)
+   ========================================================================== */
+.hero-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 380px;
+    width: 100%;
+}
+
+.hero-text {
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Search Box Form Layout */
+.search-box {
+    max-width: 540px;
+    background: #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.search-box .form-control {
+    height: 44px;
+    font-size: 0.95rem;
+    padding-left: 15px;
+    color: #495057;
+}
+
+.search-box .form-control::placeholder {
+    color: #999999;
+}
+
+.search-box .form-control:focus {
+    box-shadow: none;
+    background-color: #ffffff;
+}
+
+/* Search Button */
+.btn-search-submit {
+    background-color: #6c757d;
+    color: #ffffff;
+    border-radius: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 44px;
+}
+
+.btn-search-submit:hover {
+    background-color: #5a6268;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   Major Cities Section
+   ========================================================================== */
+.cities-section-heading {
+    color: #444444 !important;
+    font-size: 1.8rem;
+}
+
+/* City Item Container */
+.city-frame {
+    width: 135px;
+    height: 135px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.city-svg-graphic {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.city-label {
+    letter-spacing: 1.2px;
+    font-size: 0.78rem;
+    color: #666666 !important;
+}
+
+/* ==========================================================================
+   Property Cards Layout (properties.php)
+   ========================================================================== */
+.property-card {
+    background: #ffffff;
+    border: 1px solid #deedea;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.property-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-thumbnail-box {
+    padding: 0;
+}
+
+.card-thumbnail {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content-box {
+    padding: 20px 25px;
+}
+
+.property-title {
+    color: #2d2d2d;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.rating-stars {
+    color: #ff385c;
+    font-size: 0.95rem;
+}
+
+.interested-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.gender-badge-girl {
+    color: #ff385c;
+    border: 1px solid #ff385c;
+    background-color: #fff5f6;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.gender-badge-boy {
+    color: #007bff;
+    border: 1px solid #007bff;
+    background-color: #f0f7ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.card-footer-row {
+    border-top: 1px solid #eeeeee;
+    padding-top: 12px;
+    margin-top: 15px;
+}
+
+.price-amount {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #333333;
+}
+
+.btn-view-details {
+    background-color: #1d72b8;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 6px 24px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-view-details:hover {
+    background-color: #145285;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Footer Section
+   ========================================================================== */
+.footer-block {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.text-light-muted {
+    color: #a0a5a9 !important;
+    text-decoration: none;
+}
+
+.text-light-muted:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+.text-muted-dark {
+    color: #6c757d !important;
+}
